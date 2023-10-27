@@ -49,5 +49,29 @@ describe("Application", () => {
       "I agree to the terms and conditions"
     );
     expect(termsElement2).toBeInTheDocument();
+
+    //------------------Get by Placeholder------------------//
+    const nameElement3 = screen.getByPlaceholderText("Fullname");
+    expect(nameElement3).toBeInTheDocument();
+
+    //------------------Get by Text------------------//
+    const paragraphElement = screen.getByText(/^All fields are mandatory$/i);
+    expect(paragraphElement).toBeInTheDocument();
+
+    //------------------Get by Display Value------------------//
+    const nameElement4 = screen.getByDisplayValue("Nayan");
+    expect(nameElement4).toBeInTheDocument();
+
+    //------------------Get by ALT------------------//
+    const imageElement = screen.getByAltText("a person with a laptop");
+    expect(imageElement).toBeInTheDocument();
+
+    //------------------Get by Title------------------//
+    const closeElement = screen.getByTitle("close");
+    expect(closeElement).toBeInTheDocument();
+
+    //------------------Get by Test ID------------------//
+    const customElement = screen.getByTestId("custom-element");
+    expect(customElement).toBeInTheDocument();
   });
 });

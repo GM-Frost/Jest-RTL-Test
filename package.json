@@ -5,7 +5,7 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/user-event": "^14.5.1",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.59",
     "@types/react": "^18.2.33",
@@ -42,12 +42,12 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.5",
-    "@babel/plugin-proposal-private-property-in-object": "^7.16.7"
-  }
-  ,"jest":{
-    "coverageThreshold":{
-      "global":{
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
+    "tailwindcss": "^3.3.5"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
         "branches": 80,
         "functions": 80,
         "lines": 80,
