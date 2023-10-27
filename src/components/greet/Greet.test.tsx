@@ -12,13 +12,12 @@ describe("Greet", () => {
     const greetElement = screen.getByText(/hello/i);
     expect(greetElement).toBeInTheDocument();
   });
-
-  // describe("Nested describe", () => {
-  //   //if name is passed in
-  //   test.skip("Greet renders with a name", () => {
-  //     render(<Greet name="Nayan" />);
-  //     const greetElement = screen.getByText(/Hello Nayan/i);
-  //     expect(greetElement).toBeInTheDocument();
-  //   });
-  // });
+});
+describe("Nested describe", () => {
+  //if name is passed in
+  test("Greet renders with a name", () => {
+    render(<Greet name="Nayan" />);
+    const greetElement = screen.getByText(/Hello Nayan/i);
+    expect(greetElement).toBeInTheDocument();
+  });
 });
