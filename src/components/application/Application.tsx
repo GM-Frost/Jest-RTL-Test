@@ -10,7 +10,20 @@ const Application = (props: Props) => {
       <form>
         <div>
           <label htmlFor="name">Name</label>
-          <input type="text" id="name" />
+          <input
+            type="text"
+            id="name"
+            placeholder="Fullname"
+            value="Nayan"
+            onChange={() => {}}
+          />
+          <p>all fields Are mandatory</p>
+          <span title="close">X</span>
+          <img
+            src="https://via.placeholder.com/150"
+            alt="a person with a laptop"
+          />
+          <div data-testid="custom-element">Custom HTML Element</div>
         </div>
         <div>
           <label htmlFor="bio">Bio</label>
