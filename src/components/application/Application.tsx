@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-type Props = {};
+type Props = {}
 
 const Application = (props: Props) => {
   return (
@@ -42,14 +42,14 @@ const Application = (props: Props) => {
         </div>
         <div>
           <label>
-            <input type="checkbox" name="termsCondition" id="termsCondition" />{" "}
+            <input type="checkbox" name="termsCondition" id="termsCondition" />{' '}
             I agree to the terms and conditions
           </label>
         </div>
-        <button>Submit</button>
+        <button disabled>Submit</button>
       </form>
     </>
-  );
-};
+  )
+}
 
-export default Application;
+export default Application
