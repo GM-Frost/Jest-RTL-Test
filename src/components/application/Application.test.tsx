@@ -73,5 +73,7 @@ describe("Application", () => {
     //------------------Get by Test ID------------------//
     const customElement = screen.getByTestId("custom-element");
     expect(customElement).toBeInTheDocument();
+    //------------------ Submit Button disabled initially ------------------//
+    expect(submitButtonElement).toBeDisabled();
   });
 });
