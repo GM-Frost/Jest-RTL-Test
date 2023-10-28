@@ -13,6 +13,7 @@
     "@types/node": "^16.18.59",
     "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.14",
+    "eslint-config-prettier": "^9.0.0",
     "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -33,7 +34,8 @@
     "extends": [
       "react-app",
       "react-app/jest",
-      "plugin:jest-dom/recommended"
+      "plugin:jest-dom/recommended",
+      "eslint-config-prettier"
     ]
   },
   "browserslist": {
