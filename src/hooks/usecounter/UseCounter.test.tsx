@@ -1,5 +1,5 @@
-import { renderHook, screen } from "@testing-library/react";
-import UseCounter from "./useCounter";
+import { renderHook, act } from "@testing-library/react";
+import UseCounter from "./UseCounter";
 
 describe("UseCounter", () => {
   test("Should render the initial count", () => {
@@ -12,5 +12,17 @@ describe("UseCounter", () => {
       initialProps: { initialCount: 10 },
     });
     expect(result.current.count).toBe(10);
+  });
+
+  test("Should increment the count", () => {
+    const { result } = renderHook(UseCounter);
+    act(() => result.current.increment()); //Act() Used for State Updates
+    expect(result.current.count).toBe(1);
+  });
+
+  test("Should decrement the count", () => {
+    const { result } = renderHook(UseCounter);
+    act(() => result.current.decrement()); //Act() Used for State Updates
+    expect(result.current.count).toBe(-1);
   });
 });
