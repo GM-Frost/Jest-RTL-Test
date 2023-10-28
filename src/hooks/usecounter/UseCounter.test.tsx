@@ -6,4 +6,11 @@ describe("UseCounter", () => {
     const { result } = renderHook(UseCounter);
     expect(result.current.count).toBe(0);
   });
+
+  test("Should accept and render the same intial count", () => {
+    const { result } = renderHook(UseCounter, {
+      initialProps: { initialCount: 10 },
+    });
+    expect(result.current.count).toBe(10);
+  });
 });
