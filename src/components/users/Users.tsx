@@ -1,15 +1,15 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
 
 const Users = () => {
-  const [users, setUsers] = useState<string[]>([]);
-  const [error, setError] = useState<string | null>(null);
+  const [users, setUsers] = useState<string[]>([])
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
       .then((data) => setUsers(data.map((user: { name: string }) => user.name)))
-      .catch((error) => setError("Error Fetching Users"));
-  }, []);
+      .catch((error) => setError('Error Fetching Users'))
+  }, [])
   return (
     <>
       <div>
@@ -22,7 +22,7 @@ const Users = () => {
         </ul>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Users;
+export default Users

@@ -1,12 +1,12 @@
-import React from "react";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { CssBaseline } from "@mui/material";
+import React from 'react'
+import { ThemeProvider, createTheme } from '@mui/material/styles'
+import { CssBaseline } from '@mui/material'
 
 const theme = createTheme({
   palette: {
-    mode: "dark",
+    mode: 'dark',
   },
-});
+})
 
 const AppProviders = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -16,7 +16,7 @@ const AppProviders = ({ children }: { children: React.ReactNode }) => {
         {children}
       </ThemeProvider>
     </>
-  );
-};
+  )
+}
 
-export default AppProviders;
+export default AppProviders

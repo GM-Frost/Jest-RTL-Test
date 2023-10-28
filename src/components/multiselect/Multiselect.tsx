@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Multiselect = () => {
   return (
@@ -12,7 +12,7 @@ const Multiselect = () => {
         </select>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Multiselect;
+export default Multiselect

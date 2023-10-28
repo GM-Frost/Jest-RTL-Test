@@ -1,4 +1,4 @@
-import { CounterTwoProps } from "./CounterTwo.types";
+import { CounterTwoProps } from './CounterTwo.types'
 
 const CounterTwo = (props: CounterTwoProps) => {
   return (
@@ -14,7 +14,7 @@ const CounterTwo = (props: CounterTwoProps) => {
         )}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default CounterTwo;
+export default CounterTwo
